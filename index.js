@@ -28,9 +28,20 @@
 
 // Task4
 
-// let height=parseFloat(prompt("Boyuvuzu yere soxum"));
-// let weight=parseInt(prompt("Cekivizi qeyd edin"));
+let height=parseFloat(prompt("Boyuvuzu yere soxum"));
+let weight=parseInt(prompt("Cekivizi qeyd edin"));
 
-// let bodyMassIndex=weight/(height**2);
+let bodyMassIndex=weight/(height**2);
 
-// alert(bodyMassIndex);
+if (bodyMassIndex>25){
+   console.log("Agir cekili",bodyMassIndex);
+}
+else if(bodyMassIndex>=18.5 && bodyMassIndex>=24.9){
+   console.log("Normal",bodyMassIndex)
+}
+else if(bodyMassIndex<18.5){
+   console.log("Ariq",bodyMassIndex)
+}
+else{
+    console.log("Duz deyil")
+}
